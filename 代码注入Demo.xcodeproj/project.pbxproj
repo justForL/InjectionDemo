@@ -13,7 +13,47 @@
 		1A3797EE20A3F9BD002476DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3797ED20A3F9BD002476DF /* Assets.xcassets */; };
 		1A3797F120A3F9BD002476DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3797EF20A3F9BD002476DF /* LaunchScreen.storyboard */; };
 		1A3797F420A3F9BE002476DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3797F320A3F9BE002476DF /* main.m */; };
+		1A37981E20A40160002476DF /* LJHookFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A37981C20A40160002476DF /* LJHookFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A37982120A40160002476DF /* LJHookFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37981A20A40160002476DF /* LJHookFramework.framework */; };
+		1A37982220A40160002476DF /* LJHookFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37981A20A40160002476DF /* LJHookFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A37982620A4016B002476DF /* LJHookFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A37981A20A40160002476DF /* LJHookFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A37982920A40921002476DF /* LJHookMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A37982720A40921002476DF /* LJHookMgr.h */; };
+		1A37982A20A40921002476DF /* LJHookMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A37982820A40921002476DF /* LJHookMgr.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A37981F20A40160002476DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A3797D920A3F9BD002476DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A37981920A40160002476DF;
+			remoteInfo = LJHookFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A37980B20A3F9DD002476DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A37982220A40160002476DF /* LJHookFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A37980C20A3F9ED002476DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A37982620A4016B002476DF /* LJHookFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A3797E120A3F9BD002476DF /* 代码注入Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "代码注入Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +66,23 @@
 		1A3797F020A3F9BD002476DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3797F220A3F9BE002476DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3797F320A3F9BE002476DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A37981A20A40160002476DF /* LJHookFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LJHookFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A37981C20A40160002476DF /* LJHookFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHookFramework.h; sourceTree = "<group>"; };
+		1A37981D20A40160002476DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A37982720A40921002476DF /* LJHookMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJHookMgr.h; sourceTree = "<group>"; };
+		1A37982820A40921002476DF /* LJHookMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJHookMgr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A3797DE20A3F9BD002476DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A37982120A40160002476DF /* LJHookFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A37981620A40160002476DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1A3797E320A3F9BD002476DF /* 代码注入Demo */,
+				1A37981B20A40160002476DF /* LJHookFramework */,
 				1A3797E220A3F9BD002476DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1A3797E120A3F9BD002476DF /* 代码注入Demo.app */,
+				1A37981A20A40160002476DF /* LJHookFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +126,30 @@
 			path = "代码注入Demo";
 			sourceTree = "<group>";
 		};
+		1A37981B20A40160002476DF /* LJHookFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1A37981C20A40160002476DF /* LJHookFramework.h */,
+				1A37982720A40921002476DF /* LJHookMgr.h */,
+				1A37982820A40921002476DF /* LJHookMgr.m */,
+				1A37981D20A40160002476DF /* Info.plist */,
+			);
+			path = LJHookFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A37981720A40160002476DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A37982920A40921002476DF /* LJHookMgr.h in Headers */,
+				1A37981E20A40160002476DF /* LJHookFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1A3797E020A3F9BD002476DF /* 代码注入Demo */ = {
@@ -81,15 +159,37 @@
 				1A3797DD20A3F9BD002476DF /* Sources */,
 				1A3797DE20A3F9BD002476DF /* Frameworks */,
 				1A3797DF20A3F9BD002476DF /* Resources */,
+				1A37980E20A3F9FD002476DF /* ShellScript */,
+				1A37980B20A3F9DD002476DF /* Embed Frameworks */,
+				1A37980C20A3F9ED002476DF /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A37982020A40160002476DF /* PBXTargetDependency */,
 			);
 			name = "代码注入Demo";
 			productName = "代码注入Demo";
 			productReference = 1A3797E120A3F9BD002476DF /* 代码注入Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1A37981920A40160002476DF /* LJHookFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A37982320A40160002476DF /* Build configuration list for PBXNativeTarget "LJHookFramework" */;
+			buildPhases = (
+				1A37981520A40160002476DF /* Sources */,
+				1A37981620A40160002476DF /* Frameworks */,
+				1A37981720A40160002476DF /* Headers */,
+				1A37981820A40160002476DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJHookFramework;
+			productName = LJHookFramework;
+			productReference = 1A37981A20A40160002476DF /* LJHookFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +201,10 @@
 				ORGANIZATIONNAME = james;
 				TargetAttributes = {
 					1A3797E020A3F9BD002476DF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					1A37981920A40160002476DF = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -120,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				1A3797E020A3F9BD002476DF /* 代码注入Demo */,
+				1A37981920A40160002476DF /* LJHookFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +240,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A37981820A40160002476DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A37980E20A3F9FD002476DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Users/james/LJSHELL/XcodeApp.sh\n\n\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A3797DD20A3F9BD002476DF /* Sources */ = {
@@ -148,7 +276,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A37981520A40160002476DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A37982A20A40921002476DF /* LJHookMgr.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A37982020A40160002476DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A37981920A40160002476DF /* LJHookFramework */;
+			targetProxy = 1A37981F20A40160002476DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A3797EA20A3F9BD002476DF /* Main.storyboard */ = {
@@ -302,6 +446,52 @@
 			};
 			name = Release;
 		};
+		1A37982420A40160002476DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KU25Z923DF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LJHookFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "top.bonjour-james.www.LJHookFramework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A37982520A40160002476DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KU25Z923DF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LJHookFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "top.bonjour-james.www.LJHookFramework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +509,15 @@
 			buildConfigurations = (
 				1A3797F820A3F9BE002476DF /* Debug */,
 				1A3797F920A3F9BE002476DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A37982320A40160002476DF /* Build configuration list for PBXNativeTarget "LJHookFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A37982420A40160002476DF /* Debug */,
+				1A37982520A40160002476DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
